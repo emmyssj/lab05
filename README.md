@@ -1,34 +1,58 @@
-# Lab: Fun with Functions
+   - /* Problem 1 (this is your demo that we'll solve in class)
+Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
 
-## Problem Domain
+"The sum of 4 and 7 is 11."
 
-Today in lab you will create your own repo using the [code-201-lab5a Template Repo](https://github.com/codefellows/code-201-lab5a){:target="_blank"}, and then create solutions to some code problems such that your solutions pass the included tests.
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
-## Instructions
+// Write your code here
+function sum(a, b) { 
+   return [a+b, "The sum of "+a+" and "+b+" is " +(a+b)+"."]
+  
+}
+console.log(sum(4,7));
 
-You are being given starter code for today, in the `index.html` and `app.js` files inside of this directory. The success of your code will be determined by whether it passes tests that are in the `tests.js` file. You do not need to do anything with `tests.js`, though you should take a look at it to see how it works.
+// Here is the test for sum(); uncomment it to run it
+testSum(4, 7);
 
-Steps to create your repo using the template:
-  1. Click the green `Use this template` button
-  1. Name your repo
-  1. Click the green `Create repository from template` button
+/* Problem 2
+Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
-Here are a couple of things to keep in mind:
+"The product of 5 and 9 is 45."
 
-* Create a new branch for each code problem, and merge each branch into *main* on GitHub (and then pull back into main on your laptop!) when the problem is completed. Do the problems in order. Don't forget to pull the updated main branch from GitHub into your local main branch each time you merge a pull request, then make a new branch from main for the next problem.
-* Place no function calls in your code, unless inside of another function. Everything should be run by hand from the console. This is to give you additional practice using the console and practice efficient app-switching processes.
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-* Although this is an individual lab assignment, do feel free to collaborate and work in pairs or groups.
+// Write your code here
+function multiply(a, b) { 
 
-## Resources
+    return [a*b, "The product of "+a+" and "+b+" is "+(a*b)+"."]
+}
 
-This lab will have starter code provided. Work with your instructor directly to gain access to this code.
+// Here is the test for multiply(); uncomment it to run it
+testMultiply(5,9);
 
-### Submission Instructions
+/* Problem 3
+Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
 
-Make sure your *main* branch is up to date with your most recent code. 
-- In the submission area, paste a link to your GitHub repo for this project.
-- Add a comment to this Canvas submission with answers to the following questions.
-  - How did this go, overall?
-  - What observations or questions do you have about what you've learned so far?
-  - How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
+Third element: "4 and 7 and 5 sum to 16."
+Fourth element: "The product of 4 and 7 and 5 is 140."
+
+IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
+
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
+
+// Write your code here
+function sumAndMultiply(a, b, c) { 
+    return [a+b+c, a*b*c, a+" and "+b+" and "+c+" sum to "+(a+b+c)+".", "The product of "+a+" and "+b+" and "+c+" is "+(a*b*c)+"."]
+}
+
+// Here is the test for sumAndMultiply(); uncomment it to run it
+testSumAndMultiply(4,7,5);
+
+
+Comments
+
+The first 3 questions were easy to solve. 
+However, the subsequest question seemed dificult
+The questions took less then one hour to solve. However, got stuck on the other ones.
+
