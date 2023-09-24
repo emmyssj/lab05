@@ -45,16 +45,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { 
+
     return [a+b+c, a*b*c, a+" and "+b+" and "+c+" sum to "+(a+b+c)+".", "The product of "+a+" and "+b+" and "+c+" is "+(a*b*c)+"."]
+    
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
 
-Comments
-
-The first 3 questions were easy to solve. 
-However, the subsequest question seemed dificult
-The questions took less then one hour to solve. However, got stuck on the other ones.
 
