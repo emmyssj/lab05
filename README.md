@@ -11,6 +11,7 @@ function sum(a, b) {
    return [a+b, "The sum of "+a+" and "+b+" is " +(a+b)+"."]
   
 }
+
 console.log(sum(4,7));
 
 // Here is the test for sum(); uncomment it to run it
